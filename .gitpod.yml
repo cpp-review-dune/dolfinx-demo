@@ -1,4 +1,4 @@
-image: ghcr.io/cpp-review-dune/introductory-review/dolfinx-jupyter
+image: ghcr.io/cpp-review-dune/introductory-review/jupyter-dolfinx
 
 tasks:
   - name: Starting server
