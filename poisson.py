@@ -3,7 +3,7 @@ import numpy as np
 import ufl
 from dolfinx import fem, io, mesh, plot
 from ufl import ds, dx, grad, inner
-
+from dolfinx.fem import petsc
 from mpi4py import MPI
 from petsc4py.PETSc import ScalarType
 
@@ -55,7 +55,7 @@ with io.VTKFile(msh.comm, "out_poisson/u.pvd", "w") as file:
 try:
     import pyvista
 
-    cells, types, x = plot.create_vtk_mesh(V)
+    cells, types, x = plot.vtk_mesh(V)
     grid = pyvista.UnstructuredGrid(cells, types, x)
     grid.point_data["u"] = uh.x.array.real
     grid.set_active_scalars("u")
