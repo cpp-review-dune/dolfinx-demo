@@ -1,5 +1,5 @@
 ```console
-$ curl -O https://raw.githubusercontent.com/FEniCS/dolfinx/v0.7.2/python/demo/demo_mixed-poisson.py
+$ curl -O https://raw.githubusercontent.com/FEniCS/dolfinx/v0.8.0/python/demo/demo_mixed-poisson.py
 $ sudo pacman -S openmpi rdma-core
 $ mpiexec -np 1 python ./poisson.py
 $ mpiexec -np 1 python ./demo_mixed-poisson.py
