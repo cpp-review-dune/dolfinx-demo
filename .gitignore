@@ -132,3 +132,4 @@ dmypy.json
 *.xdmf
 out_poisson
 *.png
+*.jupyter_ystore.db
