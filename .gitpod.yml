@@ -4,6 +4,8 @@ tasks:
   - name: Starting server
     command: |
       # jt -t grade3
+      # https://github.com/pyvista/setup-headless-display-action/blob/main/linux/setup.sh
+      Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
       startJupyter &
 
   - name: Docs server
