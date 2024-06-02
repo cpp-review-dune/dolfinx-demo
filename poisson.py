@@ -13,7 +13,7 @@ msh = mesh.create_rectangle(
     n=(32, 16),
     cell_type=mesh.CellType.triangle,
 )
-V = fem.FunctionSpace(msh, ("Lagrange", 1))
+V = fem.functionspace(msh, ("Lagrange", 1))
 
 
 facets = mesh.locate_entities_boundary(
